@@ -47,5 +47,6 @@ Test output:
 ## Installation 
 * `clone repo`
 * `docker-compose up -d`
+* `docker-compose run rover composer install`  
 * `docker-compose run rover php index.php` to see output
 * `docker-compose run rover vendor/bin/phpunit` to run tests
