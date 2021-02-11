@@ -2,8 +2,6 @@
 
 namespace App\Model;
 
-use InvalidArgumentException;
-
 class Command
 {
     /**
