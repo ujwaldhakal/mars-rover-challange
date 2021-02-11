@@ -5,7 +5,6 @@ namespace App\Entity;
 
 use App\Model\Command;
 use App\Model\Position;
-use JetBrains\PhpStorm\Pure;
 
 class Rover
 {
@@ -37,7 +36,7 @@ class Rover
         }
     }
 
-    #[Pure] public function getPosition(): string
+    public function getPosition(): string
     {
         return $this->position->getCoordinateX() . ' ' . $this->position->getCoordinateY() . ' ' . $this->position->getDirection();
     }

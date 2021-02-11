@@ -28,32 +28,32 @@ class Position
         self::WEST => self::NORTH,
     ];
 
-    private ?int $xCoordinate = null;
+    private ?int $coordinateX = null;
 
-    private ?int $yCoordinate = null;
+    private ?int $coordinateY = null;
 
     private ?string $direction = null;
 
     /**
-     * @param integer $xCoordinate
-     * @param integer $yCoordinate
+     * @param integer $coordinateX
+     * @param integer $coordinateY
      * @param string $direction
      */
-    private function __construct(int $xCoordinate, int $yCoordinate, string $direction)
+    private function __construct(int $coordinateX, int $coordinateY, string $direction)
     {
-        $this->xCoordinate = $xCoordinate;
-        $this->yCoordinate = $yCoordinate;
+        $this->coordinateX = $coordinateX;
+        $this->coordinateY = $coordinateY;
         $this->direction = $direction;
     }
 
     public function getCoordinateX(): ?int
     {
-        return $this->xCoordinate;
+        return $this->coordinateX;
     }
 
     public function getCoordinateY(): ?int
     {
-        return $this->yCoordinate;
+        return $this->coordinateY;
     }
 
     public function getDirection(): ?string
@@ -74,19 +74,19 @@ class Position
     public function moveCoordinate()
     {
         if ($this->direction === self::NORTH) {
-            $this->yCoordinate++;
+            $this->coordinateY++;
         }
 
         if ($this->direction === self::SOUTH) {
-            $this->yCoordinate--;
+            $this->coordinateY--;
         }
 
         if ($this->direction === self::EAST) {
-            $this->xCoordinate++;
+            $this->coordinateX++;
         }
 
         if ($this->direction === self::WEST) {
-            $this->xCoordinate--;
+            $this->coordinateX--;
         }
     }
 
