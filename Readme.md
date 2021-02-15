@@ -51,3 +51,6 @@ Test output:
 * `docker-compose run rover php index.php` to see output
 * `docker-compose run rover vendor/bin/phpunit` to run tests
 
+## Project Structure
+This structure is trying to focus on domain i.e rover trying to navigate where rover is the entity and models (value objects) are the way to help rover to nagivate my simplifying their task with position, direction, parsing etc
+
